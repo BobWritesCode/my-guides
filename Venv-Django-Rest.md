@@ -104,7 +104,7 @@ How to use commands while in venv.
 
 Manage.py commands
 
-- **BASH** (PF): `py manage.py command`
+- **BASH** (PF): `py -m manage.py command`
 
 PIP commands
 
