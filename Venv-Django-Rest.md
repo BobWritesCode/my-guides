@@ -1,6 +1,6 @@
 # Set up VENV
 
-This guides is to help set up a virtual environnement.
+This guides is to help set up a virtual environnement. The guide focuses setting up VENV for Django
 
 This works on my current set up:
 
@@ -80,6 +80,8 @@ This works on my current set up:
 
 ## Install Django REST in VENV
 
+**NOTE:** If you are not using Django rest framework, then skip this step.
+
 - While in repository folder:
   - In **CMD** terminal run: `py -m pip install djangorestframework`
 
@@ -101,7 +103,7 @@ This works on my current set up:
 
 ---
 
-## Running server
+## Run local Django server
 
 - Make sure you are in your Django project directory: `.../repo_folder/project_name/`.
   - If you are in the repository directory `.../repo_folder/` then do this:
