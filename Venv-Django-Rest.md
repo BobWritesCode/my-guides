@@ -66,11 +66,25 @@ This works on my current set up:
     - You should now be in `.../repo_folder/project_name/`
 - In **CMD** terminal run: `py -m manage runserver`
 
-### Tips
+## Tips
 
 Commands will slightly change depending on terminal you are using:
 
 - `pip freeze` to see what is installed inside venv.
 - `deactivate` to deactivate venv.
+
+## Common commands
+
+This is just a place where I started to keep track of common commands to help. This is while in the venv environment
+
+**KEY:**
+
+- **(RF)** - While in repo folder `.../repo_folder/`.
+- **(PF)** - While in project folder `.../repo_folder/project_name/`.
+
+**Commands:**
+
+- Create Super User
+  - **BASH** (PF): `py manage.py createsuperuser`
 
 ## Troubleshoot
