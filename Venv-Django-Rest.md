@@ -57,14 +57,14 @@ This works on my current set up:
 - While in repository folder:
   - In **CMD** terminal run: `django-admin startproject project_name`
     - `project_name` is project name of your choice, it can be anything.
-  - Now change to directory.
-  - In **CMD** terminal run: `cd project_name`
-  - You should now be in `.../repo_folder/project_name/`
 
 ## Running server
 
-- Make sure in project file path: `.../repo_folder/project_name/`.
-  - In **CMD** terminal: `py -m manage runserver`
+- Make sure you are in your Django project directory: `.../repo_folder/project_name/`.
+  - If you are in the repository directory `.../repo_folder/` then do this:
+    - In **CMD** terminal run: `cd project_name`
+    - You should now be in `.../repo_folder/project_name/`
+- In **CMD** terminal run: `py -m manage runserver`
 
 ### Tips
 
