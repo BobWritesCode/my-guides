@@ -12,6 +12,21 @@ This works on my current set up:
 
 ---
 
+## Table of contents
+
+- [Creating repository folder](#creating-repository-folder)
+- [Create VENV](#create-venv)
+- [Starting / Activating VENV](#starting--activating-venv)
+- [Install pip](#install-pip)
+- [Install Django in VENV](#install-django-in-venv)
+- [Create Django project](#create-django-project)
+- [Create Django app](#create-django-app)
+- [Run local Django server](#run-local-django-server)
+- [Deactivate VENV](#deactivate-venv)
+- [Using commands](#using-commands)
+
+---
+
 ## Creating repository folder
 
 - Create a repository folder.
