@@ -8,6 +8,8 @@ This works on my current set up:
 - IDE: Visual Studio Code (VSC)
 - Python installed locally (3.10 and 3.11)
 
+**IMPORTANT:** I have listed the terminals I have tested the commands in. But just because I tested it in CMD does not mean you cannot do it in BASH.
+
 ---
 
 ## Creating repository folder
@@ -30,12 +32,14 @@ This works on my current set up:
 
 ## Starting / Activating VENV
 
-- While in the repository folder:
+- While in the repository folder (`.../repo_folder/`):
   - If using **CMD** terminal,
-    - run: `cd venv/Scripts` (Sometimes `cd venv/bin`, normally on Mac)
+    - run: `cd venv/Scripts` (Windows) / `cd venv/bin` (Mac)
+    - you should now be in : `.../repo_folder/venv/Scripts` (Windows) / `.../repo_folder/venv/bin` (Mac)
     - run: `activate`
       - You will now see `(venv)` at beginning of file path in the terminal.
     - run: `cd ../..`
+    - you should be back in `.../repo_folder/`
   - If using **Bash** terminal,
     - run: `source venv/Scripts/activate`
       - or if in project directory, if created, you can run: `source ../venv/Scripts/activate`
@@ -69,8 +73,16 @@ This works on my current set up:
 ## Create Django project
 
 - While in repository folder:
-  - In **CMD** terminal run: `django-admin startproject project_name`
-    - `project_name` is project name of your choice, it can be anything.
+  - In **CMD** terminal run: `django-admin startapp app_name`
+    - `app_name` is project name of your choice, it can be anything.
+
+---
+
+## Create Django app
+
+- While in Django project directory: `.../repo_folder/project_name`
+  - In **BASH** terminal run: `py -m manage startapp app_name`
+    - `app_name` is project name of your choice, it can be anything.
 
 ---
 
@@ -94,22 +106,28 @@ This works on my current set up:
 
 How to use commands while in venv.
 
-**KEY:**
+### **KEY:**
 
 - **(RF)** - While in repo folder `.../repo_folder/`.
 - **(PF)** - While in project folder `.../repo_folder/project_name/`.
 - **(NA)** - Do not need to be in a specific folder
 
-**Commands:**
+### **Commands:**
 
-Manage.py commands
+#### Manage.py commands
 
-- **BASH** (PF): `py -m manage.py command`
-- **CMD** (PF): `py -m manage command`
+- **BASH** (PF) either:
+  - `py -m manage command`
+  - `py manage.py command`
+- **CMD** (PF) either:
+  - `py -m manage command`
+  - `py manage.py command`
 
-PIP commands
+#### PIP commands
 
 - **BASH** (NA): `pip command`
 - **CMD** (NA): `pip command`
+
+---
 
 ## Troubleshoot
