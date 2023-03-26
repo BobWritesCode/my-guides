@@ -3,6 +3,7 @@
     "createsuperuser",
     "djangorestframework",
     "runserver",
+    "startapp",
     "startproject",
     "vars",
     "VENV"
