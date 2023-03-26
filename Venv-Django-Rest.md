@@ -8,11 +8,15 @@ This works on my current set up:
 - IDE: Visual Studio Code (VSC)
 - Python installed locally (3.10 and 3.11)
 
+---
+
 ## Creating repository folder
 
 - Create a repository folder.
 - Open repository folder in IDE.
 - In the terminal you should be in `.../repo_folder/`
+
+---
 
 ## Create VENV
 
@@ -21,6 +25,8 @@ This works on my current set up:
     - *example:* `py -m venv venv`
 
 *Tip:* `VENV_NAME` is the virtual environment name. `venv` is commonly used.
+
+---
 
 ## Starting / Activating VENV
 
@@ -37,26 +43,36 @@ This works on my current set up:
 *Tip:* VENV_NAME is venv environment name from above step.\
 *Tip:* Should see (venv) every time hit enter in terminal, to show venv is running.
 
+---
+
 ## Install pip
 
 - While in repository folder:
   - In **CMD** terminal run: `py -m pip install --upgrade pip`
+
+---
 
 ## Install Django in VENV
 
 - While in repository folder:
   - In **CMD** terminal run: `py -m pip install django`
 
+---
+
 ## Install Django REST in VENV
 
 - While in repository folder:
   - In **CMD** terminal run: `py -m pip install djangorestframework`
+
+---
 
 ## Create Django project
 
 - While in repository folder:
   - In **CMD** terminal run: `django-admin startproject project_name`
     - `project_name` is project name of your choice, it can be anything.
+
+---
 
 ## Running server
 
@@ -66,25 +82,33 @@ This works on my current set up:
     - You should now be in `.../repo_folder/project_name/`
 - In **CMD** terminal run: `py -m manage runserver`
 
-## Tips
+---
 
-Commands will slightly change depending on terminal you are using:
+## Deactivate VENV
 
-- `pip freeze` to see what is installed inside venv.
-- `deactivate` to deactivate venv.
+- In **CMD** or **BASH** terminal run: `deactivate` to deactivate venv.
 
-## Common commands
+---
 
-This is just a place where I started to keep track of common commands to help. This is while in the venv environment
+## Using commands
+
+How to use commands while in venv.
 
 **KEY:**
 
 - **(RF)** - While in repo folder `.../repo_folder/`.
 - **(PF)** - While in project folder `.../repo_folder/project_name/`.
+- **(NA)** - Do not need to be in a specific folder
 
 **Commands:**
 
-- Create Super User
-  - **BASH** (PF): `py manage.py createsuperuser`
+Manage.py commands
+
+- **BASH** (PF): `py manage.py command`
+
+PIP commands
+
+- **BASH** (NA): `pip command`
+- **CMD** (NA): `pip command`
 
 ## Troubleshoot
