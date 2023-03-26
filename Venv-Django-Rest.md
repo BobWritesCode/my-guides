@@ -19,8 +19,8 @@ This works on my current set up:
 - [Starting / Activating VENV](#starting--activating-venv)
 - [Install pip](#install-pip)
 - [Install Django in VENV](#install-django-in-venv)
-- [Create Django project](#create-django-project)
-- [Create Django app](#create-django-app)
+- [Creating Django project](#creating-django-project)
+- [Creating Django app](#creating-django-app)
 - [Run local Django server](#run-local-django-server)
 - [Deactivate VENV](#deactivate-venv)
 - [Using commands](#using-commands)
@@ -66,14 +66,14 @@ This works on my current set up:
 
 ## Install pip
 
-- While in repository folder:
+- While in repository folder (`.../repo_folder/`):
   - In **CMD** terminal run: `py -m pip install --upgrade pip`
 
 ---
 
 ## Install Django in VENV
 
-- While in repository folder:
+- While in repository folder (`.../repo_folder/`):
   - In **CMD** terminal run: `py -m pip install django`
 
 ---
@@ -82,34 +82,35 @@ This works on my current set up:
 
 **NOTE:** If you are not using Django rest framework, then skip this step.
 
-- While in repository folder:
+- While in repository folder (`.../repo_folder/`):
   - In **CMD** terminal run: `py -m pip install djangorestframework`
 
 ---
 
-## Create Django project
+## Creating Django project
 
-- While in repository folder:
-  - In **CMD** terminal run: `django-admin startapp app_name`
-    - `app_name` is project name of your choice, it can be anything.
+- While in repository folder (`.../repo_folder/`):
+  - In **CMD** terminal run: `django-admin startproject project_name`
+    - `project_name` is project name of your choice, it can be anything.
 
 ---
 
-## Create Django app
+## Creating Django app
 
-- While in Django project directory: `.../repo_folder/project_name`
+- While in Django project directory (`.../repo_folder/project_name/`):
   - In **BASH** terminal run: `py -m manage startapp app_name`
     - `app_name` is project name of your choice, it can be anything.
+
+*Help:* If you are in your repository folder (`.../repo_folder/`) then run: `cd project_name` and you should now be in your project directory (`.../repo_folder/project_name/`)
 
 ---
 
 ## Run local Django server
 
-- Make sure you are in your Django project directory: `.../repo_folder/project_name/`.
-  - If you are in the repository directory `.../repo_folder/` then do this:
-    - In **CMD** terminal run: `cd project_name`
-    - You should now be in `.../repo_folder/project_name/`
-- In **CMD** terminal run: `py -m manage runserver`
+- While in Django project directory (`.../repo_folder/project_name/`):
+  - In **CMD** terminal run: `py -m manage runserver`
+
+*Help:* If you are in your repository folder (`.../repo_folder/`) then run: `cd project_name` and you should now be in your project directory (`.../repo_folder/project_name/`)
 
 ---
 
@@ -125,8 +126,8 @@ How to use commands while in venv.
 
 ### **KEY:**
 
-- **(RF)** - While in repo folder `.../repo_folder/`.
-- **(PF)** - While in project folder `.../repo_folder/project_name/`.
+- **(RF)** - While in repo folder (`.../repo_folder/`).
+- **(PF)** - While in project folder (`.../repo_folder/project_name/`).
 - **(NA)** - Do not need to be in a specific folder
 
 ### **Commands:**
