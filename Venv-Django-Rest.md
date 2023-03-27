@@ -38,10 +38,10 @@ This works on my current set up:
 ## Create VENV
 
 - Run these commands in **CMD** terminal in IDE while in repository folder:
-  - In **CMD**: `py -m venv VENV_NAME`
+  - In **CMD**: `py -m venv venv_name`
     - *example:* `py -m venv venv`
 
-*Tip:* `VENV_NAME` is the virtual environment name. `venv` is commonly used.
+*Tip:* `venv_name` is the virtual environment name. `venv` is commonly used.
 
 ---
 
@@ -49,17 +49,17 @@ This works on my current set up:
 
 - While in the repository folder (`.../repo_folder/`):
   - If using **CMD** terminal,
-    - run: `cd venv/Scripts` (Windows) / `cd venv/bin` (Mac)
-    - you should now be in : `.../repo_folder/venv/Scripts` (Windows) / `.../repo_folder/venv/bin` (Mac)
+    - run: `cd venv_name/Scripts` (Windows) / `cd venv_name/bin` (Mac)
+    - you should now be in : `.../repo_folder/venv_name/Scripts` (Windows) / `.../repo_folder/venv_name/bin` (Mac)
     - run: `activate`
       - You will now see `(venv)` at beginning of file path in the terminal.
     - run: `cd ../..`
     - you should be back in `.../repo_folder/`
   - If using **Bash** terminal,
-    - run: `source venv/Scripts/activate`
-      - or if in project directory, if created, you can run: `source ../venv/Scripts/activate`
+    - run: `source venv_name/Scripts/activate`
+      - or if in project directory, if created, you can run: `source ../venv_name/Scripts/activate`
 
-*Tip:* VENV_NAME is venv environment name from above step.\
+*Tip:* `venv_name` is venv environment name from the [Create VENV](#create-venv) step.\
 *Tip:* Should see (venv) every time hit enter in terminal, to show venv is running.
 
 ---
@@ -98,7 +98,7 @@ This works on my current set up:
 ## Creating Django app
 
 - While in Django project directory (`.../repo_folder/project_name/`):
-  - In **BASH** terminal run: `py -m manage startapp app_name`
+  - In **BASH** / **CMD** terminal run: `py -m manage startapp app_name`
     - `app_name` is project name of your choice, it can be anything.
 
 *Help:* If you are in your repository folder (`.../repo_folder/`) then run: `cd project_name` and you should now be in your project directory (`.../repo_folder/project_name/`)
