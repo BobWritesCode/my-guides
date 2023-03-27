@@ -1,6 +1,6 @@
-# Set up VENV
+# Set up Virtual Environment (VENV)
 
-This guides is to help set up a virtual environnement. The guide focuses setting up VENV for Django
+This guides is to help set up a virtual environnement. The guide focuses setting up Virtual Environment for Django.
 
 This works on my current set up:
 
@@ -15,14 +15,15 @@ This works on my current set up:
 ## Table of contents
 
 - [Creating repository folder](#creating-repository-folder)
-- [Create VENV](#create-venv)
-- [Starting / Activating VENV](#starting--activating-venv)
+- [Create Virtual Environment](#create-virtual-environment)
+- [Starting / Activating Virtual Environment](#starting--activating-virtual-environment)
 - [Install pip](#install-pip)
-- [Install Django in VENV](#install-django-in-venv)
+- [Install Django in Virtual Environment](#install-django-in-virtual-environment)
+- [Install Django REST in Virtual Environment](#install-django-rest-in-virtual-environment)
 - [Creating Django project](#creating-django-project)
 - [Creating Django app](#creating-django-app)
 - [Run local Django server](#run-local-django-server)
-- [Deactivate VENV](#deactivate-venv)
+- [Deactivate Virtual Environment](#deactivate-virtual-environment)
 - [Using commands](#using-commands)
 
 ---
@@ -35,7 +36,7 @@ This works on my current set up:
 
 ---
 
-## Create VENV
+## Create Virtual Environment
 
 - Run these commands in **CMD** terminal in IDE while in repository folder:
   - In **CMD**: `py -m venv venv_name`
@@ -45,22 +46,27 @@ This works on my current set up:
 
 ---
 
-## Starting / Activating VENV
+## Starting / Activating Virtual Environment
 
 - While in the repository folder (`.../repo_folder/`):
+<br/><br/>
   - If using **CMD** terminal,
     - run: `cd venv_name/Scripts` (Windows) / `cd venv_name/bin` (Mac)
+      - *example:* `cd venv/Scripts` (Windows) / `cd venv/bin` (Mac)
     - you should now be in : `.../repo_folder/venv_name/Scripts` (Windows) / `.../repo_folder/venv_name/bin` (Mac)
     - run: `activate`
       - You will now see `(venv)` at beginning of file path in the terminal.
-    - run: `cd ../..`
-    - you should be back in `.../repo_folder/`
+    - run: `cd ../..` to back to repo folder (`.../repo_folder/`).
+<br/><br/>
   - If using **Bash** terminal,
     - run: `source venv_name/Scripts/activate`
-      - or if in project directory, if created, you can run: `source ../venv_name/Scripts/activate`
+      - *example:* `source venv/Scripts/activate`
+    - or if in the project directory (`.../repo_folder/project_name/`), you should run: `source ../venv_name/Scripts/activate`
+      - *example:* `source ../venv/Scripts/activate`
+<br/><br/>
 
-*Tip:* `venv_name` is venv environment name from the [Create VENV](#create-venv) step.\
-*Tip:* Should see (venv) every time hit enter in terminal, to show venv is running.
+*Tip:* `venv_name` is virtual environnement name from the [Create VENV](#create-virtual-environment) step.\
+*Tip:* Should see `(venv)` every time hit enter in terminal, to show virtual environment is running.
 
 ---
 
@@ -71,14 +77,14 @@ This works on my current set up:
 
 ---
 
-## Install Django in VENV
+## Install Django in Virtual Environment
 
 - While in repository folder (`.../repo_folder/`):
   - In **CMD** terminal run: `py -m pip install django`
 
 ---
 
-## Install Django REST in VENV
+## Install Django REST in Virtual Environment
 
 **NOTE:** If you are not using Django rest framework, then skip this step.
 
@@ -108,21 +114,21 @@ This works on my current set up:
 ## Run local Django server
 
 - While in Django project directory (`.../repo_folder/project_name/`):
-  - In **CMD** terminal run: `py -m manage runserver`
+  - In **BASH** / **CMD** terminal run: `py -m manage runserver`
 
 *Help:* If you are in your repository folder (`.../repo_folder/`) then run: `cd project_name` and you should now be in your project directory (`.../repo_folder/project_name/`)
 
 ---
 
-## Deactivate VENV
+## Deactivate Virtual Environment
 
-- In **CMD** or **BASH** terminal run: `deactivate` to deactivate venv.
+- In **BASH** / **CMD** terminal run: `deactivate` to deactivate virtual environnement.
 
 ---
 
 ## Using commands
 
-How to use commands while in venv.
+How to use commands while in virtual environnement.
 
 ### **KEY:**
 
