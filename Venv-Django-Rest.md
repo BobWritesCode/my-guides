@@ -38,7 +38,7 @@ This works on my current set up:
 
 ## Create Virtual Environment
 
-- Run these commands in **CMD** terminal in IDE while in repository folder:
+- Run these commands in **CMD** or **BASH** terminal in IDE while in repository folder:
   - In **CMD**: `py -m venv venv_name`
     - *example:* `py -m venv venv`
 
